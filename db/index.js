@@ -3,11 +3,11 @@ import fs from 'fs';
 import path from 'path';
 import config from './../config';
 
-const { name, username, password } = config.database;
+const { database, dialect, username, password, host } = config.database;
 
-const sequelize = new Sequelize(name, username, password, {
-  host: 'localhost',
-  dialect: 'postgres',
+const sequelize = new Sequelize(database, username, password, {
+  host,
+  dialect,
   pool: {
     max: 5,
     min: 0,
