@@ -1,0 +1,30 @@
+{
+  "name": "jobs-scrapper",
+  "version": "0.0.1",
+  "description": "Backend which serves as an API which will scrap for Job Offers",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilsonrc/JobsScraper-Backend.git"
+  },
+  "keywords": [
+    "scrapper",
+    "jobs",
+    "jobs-offer",
+    "job-offer",
+    "node-js",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wilsonrc/JobsScraper-Backend/issues"
+  },
+  "homepage": "https://github.com/wilsonrc/JobsScraper-Backend#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
