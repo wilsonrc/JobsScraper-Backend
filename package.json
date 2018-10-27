@@ -8,10 +8,14 @@
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "start": "npm run build && node dist/app.js",
     "dev": "nodemon dist/app.js",
+    "build:watch": "npm-watch build",
     "sequelize": "sequelize",
     "migrate": "sequelize db:migrate",
     "unmigrate": "sequelize db:migrate:undo",
     "generate-migration": "sequelize migration:generate --name"
+  },
+  "watch": {
+    "build": "{config,core,db,routes,scripts,tests,utils}/*.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +38,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "nodemon": "^1.18.5",
+    "npm-watch": "^0.4.0",
     "pg": "^7.6.0",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.41.0"
