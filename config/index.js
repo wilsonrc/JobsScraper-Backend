@@ -1,6 +1,8 @@
 'use strict';
 
-const isProd = process.env.NODE_ENV !== 'production';
-const configToExport = isProd ? require('./prod') : require('./dev');
+import devConfig from './dev';
+import prodConfig from './prod';
 
-module.exports = configToExport;
+const isProd = process.env.NODE_ENV !== 'production';
+
+export default (isProd ? prodConfig : devConfig);
