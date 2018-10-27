@@ -7,7 +7,7 @@
     "test": "npm run test",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "start": "nodemon --exec npm run babel-node -- ./app.js",
-    "babel-node": "babel-node --presets=es2015",
+    "babel-node": "babel-node --presets @babel/preset-env",
     "build:watch": "npm-watch build",
     "sequelize": "sequelize",
     "migrate": "sequelize db:migrate",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wilsonrc/JobsScraper-Backend.git"
+    "url": "githttps://github.com/wilsonrc/JobsScraper-Backend.git"
   },
   "keywords": [
     "scrapper",
@@ -44,10 +44,22 @@
     "sequelize": "^4.41.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
     "nodemon": "^1.18.5",
     "npm-watch": "^0.4.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/plugin-transform-destructuring": "^7.0.0",
+    "@babel/preset-env": "^7.0.0"
   }
 }

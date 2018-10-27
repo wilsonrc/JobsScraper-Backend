@@ -1,23 +1,43 @@
 'use strict';
 
 export default (sequelize, DataTypes) => {
-  return sequelize.define('users', {
+  return sequelize.define('job_posts', {
     id: {
       type: DataTypes.UUID,
       primaryKey: true,
       allowNull: false,
       defaultValue: DataTypes.UUIDV4,
     },
-    firstName: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    lastName: {
+    description: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    email: {
+    company_id: {
+      type: DataTypes.UUID,
+      allowNull: false,
+      references: {
+        model: 'companies',
+        key: 'id',
+      },
+    },
+    howToApply: {
       type: DataTypes.STRING,
+      allowNull: false,
+    },
+    isRemote: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+    },
+    location: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    postedAt: {
+      type: DataTypes.DATE,
       allowNull: false,
     },
     createdAt: {
@@ -29,8 +49,5 @@ export default (sequelize, DataTypes) => {
     deletedAt: {
       type: DataTypes.DATE,
     },
-  },
-  {
-    tableName: 'users',
-  });
+  }, { tableName: 'job_posts' });
 };

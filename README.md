@@ -10,6 +10,8 @@ After installing PostgreSQL we you need to create a DB named `jobs_scrapper`, in
 
 ### DB Commands
 
+First of all, you should install `sequelize-cli` globally in your environment. by running `npm install -g sequelize-cli`.
+
 * `npm run migrate` to run migrations.
 * `npm run unmigrate` to revert migrations.
 * `npm run generate-migration` to generate a migration file.

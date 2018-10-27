@@ -1,9 +1,7 @@
 'use strict';
 
+import database from './database';
+
 export default {
-  database : {
-    name: 'jobs_scrapper',
-    username: 'postgres',
-    password: 'postgres',
-  },
+  database : { ...database.development },
 };
