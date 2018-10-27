@@ -1,0 +1,53 @@
+{
+  "name": "jobs-scrapper",
+  "version": "0.0.1",
+  "description": "Backend which serves as an API which will scrap for Job Offers",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run test",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "nodemon --exec npm run babel-node -- ./app.js",
+    "babel-node": "babel-node --presets=es2015",
+    "build:watch": "npm-watch build",
+    "sequelize": "sequelize",
+    "migrate": "sequelize db:migrate",
+    "unmigrate": "sequelize db:migrate:undo",
+    "generate-migration": "sequelize migration:generate --name"
+  },
+  "watch": {
+    "build": "{config,core,db,routes,scripts,tests,utils}/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilsonrc/JobsScraper-Backend.git"
+  },
+  "keywords": [
+    "scrapper",
+    "jobs",
+    "jobs-offer",
+    "job-offer",
+    "node-js",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wilsonrc/JobsScraper-Backend/issues"
+  },
+  "homepage": "https://github.com/wilsonrc/JobsScraper-Backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "pg": "^7.6.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.41.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "nodemon": "^1.18.5",
+    "npm-watch": "^0.4.0",
+    "rimraf": "^2.6.2"
+  }
+}
