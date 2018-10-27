@@ -7,7 +7,11 @@
     "test": "npm run test",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "start": "npm run build && node dist/app.js",
-    "dev": "nodemon dist/app.js"
+    "dev": "nodemon dist/app.js",
+    "sequelize": "sequelize",
+    "migrate": "sequelize db:migrate",
+    "unmigrate": "sequelize db:migrate:undo",
+    "generate-migration": "sequelize migration:generate --name"
   },
   "repository": {
     "type": "git",
