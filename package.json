@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run test",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "start": "npm run build && node dist/app.js"
+    "start": "npm run build && node dist/app.js",
+    "dev": "nodemon dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,11 @@
   },
   "homepage": "https://github.com/wilsonrc/JobsScraper-Backend#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemon": "^1.18.5",
+    "pg": "^7.6.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.41.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

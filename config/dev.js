@@ -1,3 +1,9 @@
 'use strict';
 
-export default {};
+export default {
+  database : {
+    name: 'jobs_scrapper',
+    username: 'postgres',
+    password: 'postgres',
+  },
+};
