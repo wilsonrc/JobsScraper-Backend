@@ -28,9 +28,9 @@ export default (sequelize, DataTypes) => {
     },
     deletedAt: {
       type: DataTypes.DATE,
-    }
+    },
   },
   {
-    tableName: 'users'
+    tableName: 'users',
   });
 };
