@@ -17,10 +17,9 @@ After installing PostgreSQL we you need to create a DB named `jobs_scrapper`, in
 
 ## Running the server
 
-* `npm run build` after making changes, we are transpiling JS code in other to use ES6 in NodeJS.
+* `npm run build` to transpile JS code in order to use ES6 in NodeJS(no needed for dev).
 * `npm run build:watch` to auto-generate the transpiled files on changes.
-* `npm run dev` to run the dev server.
-* `npm start` to run the prod server without the dev-watcher.
+* `npm start` to run the server.
 
 ## To Take into Consideration
 
