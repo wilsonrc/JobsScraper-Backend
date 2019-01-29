@@ -44,6 +44,8 @@
     "sequelize": "^4.41.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "nodemon": "^1.18.5",
     "npm-watch": "^0.4.0",
     "rimraf": "^2.6.2",
