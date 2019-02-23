@@ -1,0 +1,28 @@
+version: '3.2'
+services:
+
+  postgres:
+    restart: always
+    image: bitnami/postgresql:latest
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRESQL_USERNAME=scrapper
+      - POSTGRESQL_PASSWORD=password123
+      - POSTGRESQL_DATABASE=jobs_scrapper
+
+  api:
+    restart: always
+    build: .
+    depends_on:
+      - postgres
+    environment:
+      DOCKER_DEV: "true"
+      DB_HOSTNAME: postgres
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_NAME}
+    ports:
+      - "8000:3000"
+    volumes:
+      - ".:/app:delegated"

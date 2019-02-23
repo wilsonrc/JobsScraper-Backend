@@ -44,9 +44,6 @@
     "sequelize": "^4.41.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.5",
-    "npm-watch": "^0.4.0",
-    "rimraf": "^2.6.2",
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/node": "^7.0.0",
@@ -60,6 +57,9 @@
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/plugin-transform-destructuring": "^7.0.0",
-    "@babel/preset-env": "^7.0.0"
+    "@babel/preset-env": "^7.0.0",
+    "nodemon": "^1.18.10",
+    "npm-watch": "^0.4.0",
+    "rimraf": "^2.6.2"
   }
 }
