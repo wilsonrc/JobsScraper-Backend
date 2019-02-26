@@ -4,7 +4,7 @@
   "description": "Backend which serves as an API which will scrap for Job Offers",
   "main": "app.js",
   "scripts": {
-    "test": "npm run test",
+    "test": "mocha --require @babel/register ./tests/**",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "start": "nodemon --exec npm run babel-node -- ./app.js",
     "babel-node": "babel-node --presets @babel/preset-env",
@@ -58,6 +58,7 @@
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/plugin-transform-destructuring": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.10",
     "npm-watch": "^0.4.0",
     "rimraf": "^2.6.2"
