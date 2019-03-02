@@ -4,7 +4,9 @@
 
 First you should install [docker](https://www.docker.com/get-started) locally, this is due to this project being ran in a docker container.
 
-After install docker, clone this repository. You'll notice an executable file `./jobs-scrapper`, this file will help you running commands to specific containers.
+Copy the `.env.default` file to a `.env` file and in it put the credentials you'd like the DB to have.
+
+After installing docker, clone this repository. You'll notice an executable file `./jobs-scrapper`, this file will help you running commands to specific containers.
 
 You run `./jobs-scrapper up -d --build` to start running tne container and all dependencies.
 
