@@ -7,9 +7,9 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRESQL_USERNAME=scrapper
-      - POSTGRESQL_PASSWORD=password123
-      - POSTGRESQL_DATABASE=jobs_scrapper
+      POSTGRESQL_USERNAME: ${DB_USERNAME}
+      POSTGRESQL_PASSWORD: ${DB_PASSWORD}
+      POSTGRESQL_DATABASE: ${DB_NAME}
 
   api:
     restart: always
