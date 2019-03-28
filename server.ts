@@ -1,8 +1,8 @@
 'use strict';
 
-import express from 'express';
-import cookieParser from 'cookie-parser';
-import bodyParser from 'body-parser';
+import * as express from 'express';
+import * as cookieParser from 'cookie-parser';
+import * as bodyParser from 'body-parser';
 
 import db from './db';
 import { assignRoutes } from './routes';
@@ -23,5 +23,5 @@ assignRoutes(app, router);
     console.error('Unable to sync the database:', e);
   }
 
-  app.listen(PORT, () => console.log(`Scrapper backend started on port ${PORT}`));
+  app.listen(PORT, () => console.log(`Scrapper backend server started on port ${PORT}`));
 })();

@@ -25,4 +25,4 @@ services:
     ports:
       - "8000:3000"
     volumes:
-      - ".:/app:delegated"
+      - ".:/api:delegated"

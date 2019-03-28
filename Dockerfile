@@ -1,6 +1,6 @@
 FROM node:10.15.1
 
-RUN npm i -g --silent sequelize-cli
+RUN npm i -g --silent sequelize-cli-typescript
 
 RUN mkdir /api
 

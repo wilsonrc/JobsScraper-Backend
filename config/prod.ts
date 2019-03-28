@@ -1,6 +1,6 @@
 'use strict';
 
-import database from  './database';
+import * as database from './database';
 
 export default {
   database : { ...database.production },
