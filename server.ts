@@ -20,8 +20,10 @@ assignRoutes(app, router);
   try {
     await db.sync(); // Waiting for all models and DB resources to load properly
   } catch (e) {
+    // tslint:disable-next-line
     console.error('Unable to sync the database:', e);
   }
 
+  // tslint:disable-next-line
   app.listen(PORT, () => console.log(`Scrapper backend server started on port ${PORT}`));
 })();
