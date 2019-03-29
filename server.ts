@@ -24,6 +24,8 @@ assignRoutes(app, router);
     console.error('Unable to sync the database:', e);
   }
 
-  // tslint:disable-next-line
-  app.listen(PORT, () => console.log(`Scrapper backend server started on port ${PORT}`));
+  app.listen(PORT, () =>
+    // tslint:disable-next-line
+    console.log(`Scrapper backend server started on port ${PORT}`)
+  );
 })();
