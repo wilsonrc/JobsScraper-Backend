@@ -1,7 +1,10 @@
 {
-  "extends": "tslint-config-airbnb",
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier",
+    "tslint-config-airbnb"
+  ],
   "rules": {
-    "align": [true, "elements", "members", "parameters", "statements"],
     "import-name": false,
     "variable-name": false,
     "max-line-length": [true, 144],
@@ -16,7 +19,18 @@
       "protected-method-regex": "^[a-z][\\w\\d]+$",
       "static-method-regex": "^[A-Z_\\d]+$",
       "function-regex": "^[A-Za-z][\\w\\d]+$"
-    }]
+    }],
+    "object-curly-spacing": true,
+    "import-spacing": true,
+    "quotemark": [true, "single"],
+    "trailing-comma": [true, {
+      "multiline": "always",
+      "singleline": "never"
+    }],
+    "whitespace": true,
+    "ter-arrow-parens": true,
+    "arrow-return-shorthand": true,
+    "object-literal-sort-keys": true
   },
   "linterOptions": {
     "exclude": [
