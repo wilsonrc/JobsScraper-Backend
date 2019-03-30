@@ -85,9 +85,12 @@
     "@types/pg": "^7.4.14",
     "@types/rimraf": "^2.0.2",
     "@types/sequelize": "^4.27.44",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.10",
     "npm-watch": "^0.4.0",
+    "prettier": "^1.16.4",
     "rimraf": "^2.6.2",
     "tslint-config-prettier": "^1.18.0"
   }
