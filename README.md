@@ -28,3 +28,13 @@ Notice that after starting the container, the server will be running already.
 ## To Take into Consideration
 
 We are using [sequelize](http://docs.sequelizejs.com/manual/installation/getting-started) in order to manage DB operations.
+
+## Contributing
+
+We have some linting rules configured for this project. We suggest you add the following config in your VSCode configuration to auto-fix all errors:
+
+```json
+"editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+}
+```

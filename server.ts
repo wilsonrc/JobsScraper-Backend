@@ -1,8 +1,8 @@
 'use strict';
 
-import * as express from 'express';
-import * as cookieParser from 'cookie-parser';
 import * as bodyParser from 'body-parser';
+import * as cookieParser from 'cookie-parser';
+import * as express from 'express';
 
 import db from './db';
 import { assignRoutes } from './routes';
