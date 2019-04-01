@@ -10,10 +10,9 @@
     "alwaysStrict": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "plugins": [
-      {
-        "name": "typescript-tslint-plugin"
-      }
-    ]
+    "plugins": [{
+      "name": "typescript-tslint-plugin"
+    }],
+    "pretty": true
   }
 }

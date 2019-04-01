@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "eslint-config-airbnb",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "rules": {
+    "camelcase": 0,
+    "arrow-body-style": ["error", "as-needed"],
+    "arrow-parens": ["error", "as-needed", {
+      "requireForBlockBody": true
+    }],
+    "quotes": ["error", "single"],
+    "comma-dangle": ["error", "always-multiline"],
+    "max-len": ["error", {
+      "ignoreComments": true,
+      "ignoreTrailingComments": true,
+      "code": 200,
+      "ignoreStrings": true
+    }],
+    "no-new-object": "error",
+    "prefer-destructuring": "error",
+    "object-curly-spacing": ["error", "always"]
+  }
+}
